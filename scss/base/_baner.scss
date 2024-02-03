@@ -1,0 +1,43 @@
+.banner {
+    background-image: url(../img/001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 800px;
+    // padding-left: calc($width / 2);
+    height: 700px;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    background-color: $red;
+    color: scale-color($red, $lightness: +40%);
+    &:hover {
+        font-weight: 700;
+    }
+    .text-baner__ {
+        &l-t {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include font-class($main-ont-size, $main-color, 600);
+        }
+        &l-c {
+            @include font-class($main-ont-size, $main-color, 600);
+        }
+        &l-b {
+            @include font-class($main-ont-size, $main-color, 600);
+        }
+        &c-c {
+            @include font-class($main-ont-size, $main-color, 600);
+        }
+        &r-t {
+            @include font-class($main-ont-size, $main-color, 600);
+        }
+        &r-b {
+            color: $red;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            @include font-class($main-ont-size, $main-color, 600);
+        }
+    }
+}

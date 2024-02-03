@@ -1,0 +1,60 @@
+body div {
+  color: yellow;
+  margin: 0;
+}
+body div span {
+  background: blue;
+  color: yellow;
+  transition: 0.3s;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  width: 100%;
+  max-width: 150px;
+  height: 20px;
+}
+body div span:hover {
+  font-size: 12px;
+  background: red;
+  color: black;
+}
+body div p {
+  background: blue;
+  color: yellow;
+  transition: 0.3s;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  width: 100%;
+  max-width: 150px;
+  height: 30px;
+}
+body div p:hover {
+  font-size: 12px;
+  background: blue;
+  color: red;
+}
+body section {
+  background: blue;
+  color: yellow;
+  transition: 0.3s;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  width: 100%;
+  max-width: 150px;
+  height: 40px;
+}
+body section:hover {
+  font-size: 12px;
+  background: #fff;
+  color: #2222;
+}
+.unimportant {
+  background: #f5f5f5;
+  color: #900;
+}
+.important {
+  background: #f5f5f5 !important;
+  color: #900 !important;
+}

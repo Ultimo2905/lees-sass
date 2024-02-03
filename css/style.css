@@ -1,0 +1,92 @@
+body {
+  font-size: 14px;
+  font-family: "Poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1690px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.banner {
+  background-image: url(../img/001.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 800px;
+  height: 700px;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  background-color: #dc3545;
+  color: #ea868f;
+}
+
+.banner:hover {
+  font-weight: 700;
+}
+
+.banner .text-baner__l-t {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.banner .text-baner__l-c {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.banner .text-baner__l-b {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1;
+}
+
+
+.banner .text-baner__c-c {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.banner .text-baner__r-t {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.banner .text-baner__r-b {
+  color: #dc3545;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1;
+}

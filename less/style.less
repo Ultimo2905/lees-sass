@@ -1,0 +1,49 @@
+@color-main: yellow;
+@color-second: blue;
+
+.my-other-mixin(@color-text, @color-bg, @btn-height,@color-bg-hover,@color-text-hover) {
+  background: @color-bg;
+  color:@color-text;
+  transition: 0.3s;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  width: 100%;
+  max-width: 150px;
+  height: @btn-height;
+  &:hover{
+    font-size: 12px;
+    background: @color-bg-hover;
+    color:@color-text-hover;
+  }
+}
+
+
+body{
+    div{
+        color: @color-main;
+        margin: 0;
+        span{
+            .my-other-mixin(@color-main, @color-second, 20px, red,black);
+        }
+        p{
+            .my-other-mixin(@color-main, @color-second, 30px,blue,red);
+        }
+    }
+    section{
+        .my-other-mixin(@color-main, @color-second, 40px, #fff, #2222);
+    }
+}
+
+
+
+.foo (@bg: #f5f5f5, @color: #900) {
+  background: @bg;
+  color: @color;
+}
+.unimportant {
+  .foo();
+}
+.important {
+  .foo() !important;
+}
